@@ -23,10 +23,8 @@
     "prettier": "^1.19.1"
   },
   "dependencies": {
-    "basic-tts": "^1.0.4",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "src": "^1.1.2"
   }
 }
