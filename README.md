@@ -1,5 +1,9 @@
 # gameskeep-frontend
 
+[Build Status](https://travis-ci.org/ThinkBack/gameskeep-frontend.svg?branch=master)
+
+Frontend project of GamesKeep WebApp.
+
 ## Project Structure
 
 ```
