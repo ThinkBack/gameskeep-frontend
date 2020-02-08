@@ -1,6 +1,4 @@
-# gameskeep-frontend
-
-[Build Status](https://travis-ci.org/ThinkBack/gameskeep-frontend.svg?branch=master)
+# gameskeep-frontend [![Build Status](https://travis-ci.org/ThinkBack/gameskeep-frontend.svg?branch=master)](https://travis-ci.org/ThinkBack/gameskeep-frontend)
 
 Frontend project of GamesKeep WebApp.
 
