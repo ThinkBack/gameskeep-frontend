@@ -1,9 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-const App = () =>
-  (<div>
-    Hello world
-  </div>)
+import Layout from './layout/layout.jsx';
+
+import './index.scss';
+
+const App = () => <Layout/>;
 
 render (<App />, document.getElementById('root'));
