@@ -1,7 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import './layout.scss';
-
+import "./layout.scss";
 
 class Layout extends React.Component {
   render() {
@@ -12,7 +11,7 @@ class Layout extends React.Component {
         <div className="grid-container__navbar"></div>
         <div className="grid-container__body"></div>
       </div>
-    )
+    );
   }
 }
 
