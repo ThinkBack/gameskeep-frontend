@@ -1,12 +1,12 @@
-import React from "react";
-import "./search.scss";
+import React from 'react';
+import './search.scss';
 
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      input: ""
+      input: '',
     };
   }
 
