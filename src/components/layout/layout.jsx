@@ -1,5 +1,7 @@
 import React from 'react';
 
+import SearchBar from '../search/search.jsx';
+
 import './layout.scss';
 
 class Layout extends React.Component {
@@ -7,7 +9,9 @@ class Layout extends React.Component {
     return (
       <div className="grid-container">
         <div className="grid-container__sidebar"></div>
-        <div className="grid-container__header"></div>
+        <div className="grid-container__header">
+          <SearchBar />
+        </div>
         <div className="grid-container__navbar"></div>
         <div className="grid-container__body"></div>
       </div>

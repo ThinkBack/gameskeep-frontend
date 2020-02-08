@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './search.scss';
 
 class SearchBar extends React.Component {
@@ -15,7 +16,7 @@ class SearchBar extends React.Component {
 
     return (
       <form className="search-bar">
-        <span className="search-bar search-bar__search-icon"> L </span>
+        <FontAwesomeIcon icon="search" />
         <input
           type="text"
           value={input}
