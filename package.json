@@ -1,10 +1,10 @@
 {
-  "name": "bingo-react",
-  "version": "1.0.0",
+  "name": "gameskeep-frontend",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "dev": "parcel public/index.html",
     "format": "prettier \"src/**/*.{js,jsx,html}\" --write",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
@@ -23,6 +23,7 @@
     "prettier": "^1.19.1"
   },
   "dependencies": {
+    "dropbox": "^4.0.30",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
