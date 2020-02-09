@@ -1,5 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Search from '@material-ui/icons/Search';
 import './search.scss';
 
 class SearchBar extends React.Component {
@@ -19,8 +19,8 @@ class SearchBar extends React.Component {
     const { input } = this.state;
 
     return (
-      <form className="search-bar" onSubmit={this.handleSubmit}>
-        <FontAwesomeIcon icon="search" />
+      <form className="search-bar">
+        <Search />
         <input
           type="text"
           value={input}
