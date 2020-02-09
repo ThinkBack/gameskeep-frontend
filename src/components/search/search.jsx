@@ -11,17 +11,21 @@ class SearchBar extends React.Component {
     };
   }
 
+  handleChange(event) {
+    this.setState({ input: event.target.value });
+  }
+
   render() {
     const { input } = this.state;
 
     return (
-      <form className="search-bar">
+      <form className="search-bar" onSubmit={this.handleSubmit}>
         <FontAwesomeIcon icon="search" />
         <input
           type="text"
           value={input}
           className="search-bar search-bar__search-input"
-          onChange={e => this.setState({ input: e.target.value })}
+          onChange={e => this.handleChange(e)}
         />
       </form>
     );

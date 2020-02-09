@@ -26,7 +26,8 @@
         "jsxBracketSameLine": false,
         "parser": "babel"
       }
-    ]
+    ],
+    "eol-last": 1
   },
   "plugins": ["react", "import", "jsx-a11y", "react-hooks", "prettier"],
   "parserOptions": {
@@ -45,5 +46,11 @@
     "react": {
       "version": "detect"
     }
+  },
+  "globals": {
+    "describe": true,
+    "expect": true,
+    "test": true,
+    "it": true
   }
 }
