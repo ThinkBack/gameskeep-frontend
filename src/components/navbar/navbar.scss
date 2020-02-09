@@ -1,0 +1,25 @@
+.navbar {
+  height: 100%;
+  &__ul {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style:none;
+  }
+
+  &__li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  &__link {
+    text-decoration: none;
+    &--enabled {
+      font-weight: bold;
+    }
+  }
+}
