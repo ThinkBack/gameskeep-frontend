@@ -1,5 +1,4 @@
 import React from 'react';
-import Search from '@material-ui/icons/Search';
 import './search.scss';
 
 class SearchBar extends React.Component {
@@ -20,7 +19,6 @@ class SearchBar extends React.Component {
 
     return (
       <form className="search-bar">
-        <Search />
         <input
           type="text"
           value={input}
