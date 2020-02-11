@@ -57,9 +57,7 @@
     }
   },
   "dependencies": {
-    "@material-ui/core": "^4.9.2",
-    "@material-ui/icons": "^4.9.1",
-    "@types/react": "^16.9.19",
+    "antd": "^3.26.9",
     "dropbox": "^4.0.30",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import SearchBar from '../search/search.jsx';
 import NavBar from '../navbar/navbar.jsx';
 
 import { Switch, Route, Redirect } from 'react-router-dom';
@@ -12,9 +11,7 @@ class Layout extends React.Component {
     return (
       <div className="grid-container">
         <div className="grid-container__sidebar"></div>
-        <div className="grid-container__header">
-          <SearchBar />
-        </div>
+        <div className="grid-container__header"></div>
         <div className="grid-container__navbar">
           <NavBar />
         </div>

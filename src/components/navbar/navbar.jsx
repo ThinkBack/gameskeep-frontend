@@ -1,44 +1,26 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
+
+import { Menu } from 'antd';
 
 import './navbar.scss';
 
 class NavBar extends React.Component {
   render() {
+    const { location, history } = this.props;
+
     return (
-      <nav className="navbar">
-        <ul className="navbar__ul">
-          <li className="navbar__li">
-            <NavLink
-              to="/pending"
-              className="navbar__link"
-              activeClassName="navbar__link--enabled"
-            >
-              Pending
-            </NavLink>
-          </li>
-          <li className="navbar__li">
-            <NavLink
-              to="/playing"
-              className="navbar__link"
-              activeClassName="navbar__link--enabled"
-            >
-              Playing
-            </NavLink>
-          </li>
-          <li className="navbar__li">
-            <NavLink
-              to="/finished"
-              className="navbar__link"
-              activeClassName="navbar__link--enabled"
-            >
-              Finished
-            </NavLink>
-          </li>
-        </ul>
-      </nav>
+      <Menu
+        onClick={e => history.push(e.key)}
+        selectedKeys={[location.pathname]}
+        mode="horizontal"
+      >
+        <Menu.Item key="/pending">Pending</Menu.Item>
+        <Menu.Item key="/playing">Playing</Menu.Item>
+        <Menu.Item key="/finished">Finished</Menu.Item>
+      </Menu>
     );
   }
 }
 
-export default NavBar;
+export default withRouter(NavBar);
