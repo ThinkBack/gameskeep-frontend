@@ -4,18 +4,18 @@ import NavBar from '../navbar/navbar.jsx';
 
 import { Switch, Route, Redirect } from 'react-router-dom';
 
+import { Layout } from 'antd';
+const { Header, Content } = Layout;
+
 import './layout.scss';
 
-class Layout extends React.Component {
+class MainLayout extends React.Component {
   render() {
     return (
-      <div className="grid-container">
-        <div className="grid-container__sidebar"></div>
-        <div className="grid-container__header"></div>
-        <div className="grid-container__navbar">
-          <NavBar />
-        </div>
-        <div className="grid-container__body">
+      <Layout className="layout">
+        <Header className="layout__header"></Header>
+        <NavBar />
+        <Content className="layout__content">
           <Switch>
             <Route path="/pending">
               <h1>PENDING</h1>
@@ -30,10 +30,10 @@ class Layout extends React.Component {
               <Redirect to="/pending" />
             </Route>
           </Switch>
-        </div>
-      </div>
+        </Content>
+      </Layout>
     );
   }
 }
 
-export default Layout;
+export default MainLayout;

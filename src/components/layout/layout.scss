@@ -1,36 +1,9 @@
-.grid-container {
-  display: grid;
+.layout {
   height: 100%;
-  grid-template-columns: 20em auto;
-  grid-template-rows: 3em 3em auto;
-  grid-template-areas:
-    'sidebar header'
-    'sidebar navbar'
-    'sidebar body';
-
-  @media only screen and (max-width: 768px) {
-    grid-template-columns: auto;
-    grid-template-rows: 3em 3em auto 3em;
-    grid-template-areas:
-    'header'
-    'navbar'
-    'body'
-    'sidebar';
-  }
-
-  &__sidebar {
-    grid-area: sidebar;
-  }
-
-  &__header {
-    grid-area: header;
-  }
-
-  &__navbar {
-    grid-area: navbar;
-  }
-
-  &__body {
-    grid-area: body;
+  &__content {
+    height: inherit;
+    background-color: #fff;
+    padding: 24px;
+    margin: 24px;
   }
 }
