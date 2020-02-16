@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NavBar from '../navbar/navbar.jsx';
+import GamesView from '../games-view/games-view.jsx';
 
 import { Switch, Route, Redirect } from 'react-router-dom';
 
@@ -14,20 +14,13 @@ class MainLayout extends React.Component {
     return (
       <Layout className="layout">
         <Header className="layout__header"></Header>
-        <NavBar />
         <Content className="layout__content">
           <Switch>
-            <Route path="/pending">
-              <h1>PENDING</h1>
-            </Route>
-            <Route path="/playing">
-              <h1>PLAYING</h1>
-            </Route>
-            <Route path="/finished">
-              <h1>FINISHED</h1>
+            <Route path="/games">
+              <GamesView />
             </Route>
             <Route path="/">
-              <Redirect to="/pending" />
+              <Redirect to="/games/pending" />
             </Route>
           </Switch>
         </Content>

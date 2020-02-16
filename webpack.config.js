@@ -6,6 +6,9 @@ module.exports = {
   mode: 'development',
   devServer: {
     historyApiFallback: true,
+    host: '192.168.1.104',
+    port: 8080,
+    disableHostCheck: true,
   },
   plugins: [
     new HtmlWebPackPlugin({

@@ -1,0 +1,19 @@
+.ant-tabs-nav-container, .ant-tabs-nav-wrap, .ant-tabs-nav-scroll, .ant-tabs-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .ant-tabs-tab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+    }
+  }
+}
